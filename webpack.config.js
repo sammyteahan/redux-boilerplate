@@ -1,3 +1,5 @@
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 module.exports = {
   entry: [
     './src/app.js'
@@ -8,10 +10,24 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    loaders: [{
+    loaders: [
+      {
       exclude: /node_modules/,
       loader: 'babel'
-    }]
+      },
+      {
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract(
+          'style',
+          'css!sass'
+        )
+      },
+      {
+        test: /\.(png|jpg|gif|ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+        exclude: /node_modules/,
+        loader: 'file-loader'
+      }
+    ]
   },
   resolve: {
     extensions: ['', '.js', '.jsx']
