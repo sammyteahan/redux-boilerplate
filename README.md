@@ -9,8 +9,9 @@ Check out [Redux](http://redux.js.org/) in more detail on the official site.
 There are two methods for getting started with this repo.
 
 ```
-    > git clone https://github.com/sammyteahan/redux-boilerplate.git
-	> cd redux-boilerplate
-	> npm install
-	> npm start
+> git clone https://github.com/sammyteahan/redux-boilerplate.git
+> cd redux-boilerplate
+> npm install
+> npm start
 ```
+
