@@ -1,0 +1,20 @@
+/*------------------------------------*\
+                ¡LINKS
+\*------------------------------------*/
+
+
+.link {
+    cursor: pointer;
+    text-decoration: none;
+    &.color-1 {
+        color: color(color-1);
+        &:link,
+        &:visited {
+            color: color(color-1);
+        }
+        &:hover,
+        &:active {
+            text-decoration: underline;
+        }
+    }
+}

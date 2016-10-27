@@ -1,0 +1,29 @@
+/*------------------------------------*\
+              ¡BUTTONS
+\*------------------------------------*/
+
+.btn {
+    border: solid .125em;
+    color: color(neutral-1);
+    cursor: pointer;
+    font-weight: 700;
+    padding: .625em 1em;
+    text-transform: uppercase;
+    &.btn-lg {
+        font-size: 1.5rem;
+    }
+    &.btn-md {
+        font-size: 1.25rem;
+    }
+    &.btn-sm {
+        font-size: 1rem;
+    }
+    &.color-1 {
+        background: color(color-1);
+        border-color: color(color-1);
+        &.hollow {
+            background: transparent;
+            color: color(color-1);
+        }
+    }
+}

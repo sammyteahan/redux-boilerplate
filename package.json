@@ -7,7 +7,8 @@
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha './test/**/*.spec.js' --compilers js:babel-core/register",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
@@ -28,7 +29,11 @@
     "axios": "^0.14.0",
     "babel-preset-stage-1": "^6.1.18",
     "classnames": "^2.2.5",
+    "css-loader": "^0.25.0",
     "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.4",
+    "html-webpack-plugin": "^1.7.0",
     "lodash": "^4.15.0",
     "node-sass": "^3.4.2",
     "react": "^0.14.3",

@@ -1,0 +1,61 @@
+/*------------------------------------*\
+               STYLEGUIDE
+\*------------------------------------*/
+
+.style-group {
+    margin: 0 0 100px;
+    padding: 0 20px;
+    .title {
+        border-bottom: solid 1px color(neutral-2);
+        color: color(color-1);
+        margin: 20px 0;
+        padding: 0 0 5px;
+    }
+    .instructions {
+        @include boxShadow(inset 0 0 8px color(neutral-2));
+        background: color(neutral-1);
+        font-size: 1.25rem;
+        margin: 0 0 20px;
+        padding: 15px;
+    }
+    .swatch {
+        text-align: center;
+        .swatch-color {
+            border: solid 1px color(neutral-2);
+            height: 100px;
+            margin: 0 auto 5px;
+            width: 100px;
+        }
+        span {
+            display: block;
+        }
+    }
+    .swatch-wrap,
+    .button-wrap,
+    .link-wrap,
+    .icon-wrap {
+        @include flexbox();
+        @include justify-content(space-between);
+        &.start {
+            @include justify-content(flex-start);
+        }
+        &.baseline {
+            @include align-items(baseline);
+        }
+    }
+    .button-container {
+        width: 215px;
+        span {
+            display: block;
+            margin: 5px 0 0;
+        }
+    }
+    .link-container,
+    .icon-container {
+        width: 125px;
+        span {
+            display: block;
+            margin: 5px 0 0;
+        }
+    }
+}
