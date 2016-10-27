@@ -1,0 +1,144 @@
+/*------------------------------------*\
+              ¡FORMS
+\*------------------------------------*/
+
+.input-group {
+	margin: 20px 0 0;
+	.label {
+		display: block;
+		color: color(neutral-2);
+	}
+	.input {
+		border: solid 1px color(neutral-2);
+		display: block;
+		font-size: 1rem;
+		height: 40px;
+		padding: 0 5px;
+		width: 100%;
+	}
+	.textarea {
+		border: solid 1px color(neutral-2);
+		display: block;
+		font-size: 1rem;
+		height: 150px;
+		max-height: 150px;
+		max-width: 100%;
+		padding: 5px;
+		width: 100%;
+	}
+	.checkbox {
+	  cursor: pointer;
+	  display: inline-block;
+	  padding-left: 24px;
+	  position: relative;
+	  input {
+	    position: absolute;
+	    opacity: 0;
+	    z-index: -1;
+	  }
+	  span {
+			background-color: color(neutral-0);
+      border: solid 1px color(neutral-0);
+      border-radius: 4px;
+      display: block;
+      height: 20px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 20px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+	  }
+	  input:checked ~ span:after {
+			@include transform(rotate(135deg));
+      border-color: color(color-2);
+      border-style: solid;
+      border-width: 2px 2px 0 0;
+      content: '';
+      display: inline-block;
+      height: 5px;
+      right: 2px;
+      position: absolute;
+      top: 3px;
+      width: 12px;
+	  }
+	}
+	.radio {
+	  position: relative;
+	  display: block;
+	  padding-left: 24px;
+	  cursor: pointer;
+	  input {
+	    position: absolute;
+	    opacity: 0;
+	    z-index: -1;
+	  }
+	  span {
+	  	border: solid 1px color(neutral-2);
+	    border-radius: 50%;
+	    display: block;
+	    height: 20px;
+	    left: 0;
+	    position: absolute;
+	    top: 0;
+	    width: 20px;
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+	  }
+	  input:checked ~ span {
+	    background: transparent;
+	  }
+	  input:checked ~ span:after {
+	    background: color(color-1);
+	    border-radius: 50%;
+	    content: '';
+	    display: block;
+	    height: 12px;
+	    left: 3px;
+	    position: absolute;
+	    top: 3px;
+	    width: 12px;
+	    z-index: 1;
+	  }
+	}
+	.select {
+		border: solid 1px color(neutral-2);
+		display: inline-block;
+		position: relative;
+		width: 100%;
+		select{
+			background: color(neutral-1);
+			border: 0;
+			border-radius: 0;
+			cursor: pointer;
+			display: inline-block;
+			font-size: 1rem;
+			height: 40px;
+			line-height: 1.5;
+			margin: 0;
+			padding: 5px 35px 5px 10px;
+			outline: 0;
+			width: 100%;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+		}
+		&:after {
+			border-color: color(color-1);
+			border-style: solid;
+			border-width: 2px 2px 0 0;
+			content: '';
+			display: inline-block;
+			height: 16px;
+			right: 10px;
+			position: absolute;
+			top: 5px;
+			transform: rotate(135deg);
+			width: 16px;
+		}
+	}
+}
