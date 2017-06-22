@@ -21,3 +21,10 @@ There's still some work that needs to be done in `webpack.config.js` here, but r
 #### Style
 
 Everything in `src/sass` is based on [brennens](https://github.com/brennens) boilerplate located [here](https://github.com/brennens/boilerplate).
+
+
+#### Todo
+
+- [ ] Migrate to webpack 2 [link](https://webpack.js.org/guides/migrating/)
+- [ ] Upgrade to styled components [link](https://github.com/styled-components/styled-components)
+- [ ] Include flexbox grid helpers [link](https://codepen.io/sammyteahan/pen/eRmbVR)
